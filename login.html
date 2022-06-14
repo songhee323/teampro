@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.login {
+  width: 30%;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: orange;
+  font-size: 2em;
+}
+
+
+.login_id {
+  border-bottom: 2px solid #adadad;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.login_id input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+}
+
+.login_pw {
+  border-bottom: 2px solid #adadad;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.login_pw input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+}
+
+.login_etc {
+  padding: 10px;
+  width: 80%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+
+.btn {
+  position:relative;
+  left:40%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+  width:80%;
+  height:40px;
+  background: orange;
+  background-position: left;
+  background-size: 200%;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  border-radius: 40px;
+  cursor:pointer;
+  transition: 0.4s;
+  display:inline;
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+</style>
+<body>
+    <div class="wrap">
+        <div class="login">
+            <h2>Log-in</h2>
+            <div class="login_id">
+                <h4>아이디</h4>
+                <input type="id" name="" id="" placeholder="">
+            </div>
+            <div class="login_pw">
+                <h4>비밀번호</h4>
+                <input type="password" name="" id="" placeholder="">
+            </div>
+            <div class="login_etc">
+                <div class="signup">
+                <a href="signup.html">회원가입</a>
+                </div>
+                <div class="forgot_id">
+                <a href="ID.html">아이디/비밀번호찾기</a>
+            	</div>
+            </div><br>
+                <input type="submit" class="btn" value="로그인">
+        </div>
+    </div>
+</body>
+</html>

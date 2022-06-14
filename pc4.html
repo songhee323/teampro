@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.one{
+	text-align: center; 
+ 	margin: 50px 0 10px -500px;
+}
+
+.one2 {
+	margin: 0 0 100px 350px;
+	padding: 0 0 0 50px; 
+}
+.two{
+	text-align: center;
+	margin: -500px 0 0 500px;
+}
+
+.name{
+	text-align: top;
+	padding: 0 10px 10px 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.name2{
+	display: inline-block;	
+	padding-left: 50px; 
+}
+
+.name2 th, td{
+	text-align: center; 
+	padding: 10px 20px 8px 15px;
+}
+
+.three{
+	text-align: center;
+	margin: 30px 0 0 550px;
+}
+
+.btn input{
+	border: none;
+	width: 30px;
+	text-align: center;
+	padding: 3px;
+}
+
+.btn span{
+	padding: 4px;
+	font-size: 15px;
+	text-align: right;
+}
+
+.btn1{
+	display: inline-block; 
+	margin: 25px 10px 0 0;
+ 	padding: 0 25px; 
+ 	line-height: 2.5;
+	height: 40px;
+	font-size: 15px;
+	border: none;
+	border-radius: 25px;	
+	background-color: orange;
+}
+
+.btn2{
+	display: inline-block;
+	margin-bottom: 50px;
+	padding: 0 25px ;
+	line-height: 2.5;
+	height: 40px;
+	font-size: 15px;
+	border: none;
+	border-radius: 25px;	
+	background-color: orange;
+}
+
+</style>
+<body>
+	<!-- 상품사진 -->
+	<div class="one">
+		<img src="pc4.png" alt="" width="550" height="550">
+	</div>
+	<div class="one2">
+		<a onclick="window.open('pc4pop.html', '제품설명',
+				'width=800, height=600, left=100, top=0');" style="cursor: pointer">제품설명</a>
+	</div>
+	<div class="two">
+		<div class="name">
+ 			LG UItraGear 노트북
+ 		</div>
+ 		<table class = "name2"> 
+	 		<tr> 
+	 		<th>브랜드</th> 
+	 			<td>LG</td> 
+	 		</tr>
+	 		<tr> 
+	 		<th>모델명</th> 
+	 			<td>17U70P-PA7DK</td> 
+	 		</tr> 
+	 		<tr> 
+	 		<th>판매가</th> 
+	 			<td>2,240,000 원</td> 
+	 		</tr> 
+	 	</table> 
+	</div>
+	<div class="three">
+		<ul>주문수량</ul>
+			<div class="btn" >
+				<span class="minus">
+				<button type="button" onclick="">-</button>
+				</span>
+				<input type="text" readonly value="1">
+				<span class="plus">
+				<button type="button" onclick="">+</button>
+				</span>
+				</div>
+		<div class="btn1">
+			<a href="login.html">바로구매</a>	
+		</div>
+		<div class="btn2">
+			<a href="login.html">장바구니</a>	
+		</div>		
+	</div>
+</body>
+</html>
